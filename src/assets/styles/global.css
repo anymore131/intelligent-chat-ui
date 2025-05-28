@@ -1,0 +1,136 @@
+/* assets/styles/global.css */
+:root {
+  --primary-color: #409eff;
+  --red-dot-color: #ff4d4f;
+
+  /* 添加过渡效果 */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* 暗色主题 */
+.dark-theme {
+  --border-color: #363739;
+  --text-color: #ffffff;
+  --text-opposite-color: #303133;
+  --text-shallow-color: #C0C4CC;
+  --bg-color: #303133;
+  --bg-card-color: #606266;
+  --input-color: #f0f8ff;
+  --item-deep-color: #3a3a3a;
+  --item-color: #313131;
+  --item-active-color: #3a3a3a;
+  --item-active-hover-color: #3a3a3a;
+  --message-sent-bg-color: #409EFF;
+  --message-received-text-color: #e9ecef;
+  --a-color: #409eff;
+  --nav-bg-color: #000000;
+  --nav-text-color: #ffffff;
+  --nav-btn-color: #ffffff;
+  --nav-btn-hover-color: rgba(255, 255, 255, 0.5);
+
+  --admin-bg-color: #303133;
+  --admin-bg-card-color: #606266;
+  --admin-scrollbar-track-color: #000000;
+  --admin-scrollbar-thumb-color: #c1c1c1;
+  --admin-scrollbar-thumb-hover-color: #a8a8a8;
+  --admin-btn-color: #666;
+  --admin-border-color: #2b2c2e;
+  --admin-border-bottom-color: #383838;
+  --admin-text-color: #ffffff;
+  --admin-a-color: #409eff;
+  --admin-a-hover-color: #66b1ff;
+  --admin-a-active-color: #3a8ee6;
+  --admin-menu-bg-color: #001529;
+  --admin-menu-text-color: #ffffff;
+  --admin-menu-scrollbar-color: rgba(255, 255, 255, 0.3);
+  --admin-menu-active-menu-bg-color: #1890ff;
+  --admin-menu-active-submenu-bg-color: rgba(24, 144, 255, 0.2);
+  --admin-error-color: #f56c6c;
+}
+
+.light-theme {
+  --border-color: #ebeef5;
+  --text-color: #303133;
+  --text-opposite-color: #ffffff;
+  --text-shallow-color: #909399;
+  --bg-color: #ffffff;
+  --bg-card-color: #f0f2f5;
+  --input-color: #f0f8ff;
+  --item-deep-color: #dddddd;
+  --item-color: #f5f5f5;
+  --item-active-color: #ccebff;
+  --item-active-hover-color: #ccebff;
+  --message-sent-bg-color: #409EFF;
+  --message-received-text-color: #e9ecef;
+  --a-color: #409eff;
+  --nav-bg-color: #0099ff;
+  --nav-text-color: #ffffff;
+  --nav-btn-color: #ffffff;
+  --nav-btn-hover-color: rgba(255, 255, 255, 0.5);
+
+  --admin-bg-color: #ffffff;
+  --admin-bg-card-color: #fef0f0;
+  --admin-scrollbar-track-color: #f5f5f5;
+  --admin-scrollbar-thumb-color: #c1c1c1;
+  --admin-scrollbar-thumb-hover-color: #a8a8a8;
+  --admin-btn-color: #666;
+  --admin-border-color: #333333;
+  --admin-border-bottom-color: #eee;
+  --admin-text-color: #303133;
+  --admin-a-color: #409eff;
+  --admin-a-hover-color: #66b1ff;
+  --admin-a-active-color: #3a8ee6;
+  --admin-menu-bg-color: #001529;
+  --admin-menu-text-color: #ffffff;
+  --admin-menu-scrollbar-color: rgba(255, 255, 255, 0.3);
+  --admin-menu-active-menu-bg-color: #1890ff;
+  --admin-menu-active-submenu-bg-color: rgba(24, 144, 255, 0.2);
+  --admin-error-color: #f56c6c;
+}
+
+/* 自定义主题 */
+.pink-theme {
+  --border-color: #ebeef5;
+  --text-color: #303133;
+  --text-opposite-color: #ffffff;
+  --text-shallow-color: #909399;
+  --bg-color: #ffffff;
+  --bg-card-color: #f0f2f5;
+  --input-color: #fef0ff;
+  --item-deep-color: #dddddd;
+  --item-color: #f5f5f5;
+  --item-active-color: #feccff;
+  --item-active-hover-color: #faccff;
+  --message-sent-bg-color: #ff40ec;
+  --message-received-text-color: #eee9ef;
+  --a-color: #ff40e2;
+  --nav-bg-color: #ff00ee;
+  --nav-text-color: #ffffff;
+  --nav-btn-color: #ffffff;
+  --nav-btn-hover-color: rgba(255, 255, 255, 0.5);
+
+  --admin-bg-color: #ffffff;
+  --admin-bg-card-color: #fef0f0;
+  --admin-scrollbar-track-color: #f5f5f5;
+  --admin-scrollbar-thumb-color: #c1c1c1;
+  --admin-scrollbar-thumb-hover-color: #a8a8a8;
+  --admin-btn-color: #666;
+  --admin-border-color: #333333;
+  --admin-border-bottom-color: #eee;
+  --admin-text-color: #303133;
+  --admin-a-color: #409eff;
+  --admin-a-hover-color: #66b1ff;
+  --admin-a-active-color: #3a8ee6;
+  --admin-menu-bg-color: #001529;
+  --admin-menu-text-color: #ffffff;
+  --admin-menu-scrollbar-color: rgba(255, 255, 255, 0.3);
+  --admin-menu-active-menu-bg-color: #1890ff;
+  --admin-menu-active-submenu-bg-color: rgba(24, 144, 255, 0.2);
+  --admin-error-color: #f56c6c;
+}
+
+/* 确保根元素应用背景色 */
+html, body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
